@@ -1,0 +1,29 @@
+[workspace]
+members = [
+    "app",
+    "components",
+    "db",
+    "models",
+    "text-input"
+]
+resolver = "1"  # Add this line to fix the resolver warning
+
+
+[workspace.dependencies]
+anyhow = "1.0.95"
+async-std = "1.12"
+csv = "1.2"
+getrandom = { version = "0.2", features = ["js"] }
+futures = "0.3"
+# libsql = "0.6.0"
+log = "0.4.22"
+rusqlite = { git = "https://github.com/trevyn/rusqlite.git", branch = "wasm32-unknown-unknown", features = ["bundled"]}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.135"
+strsim = "0.10"  # For Damerau-Levenshtein distance
+thiserror = "2.0.11"
+wasm-bindgen = "0.2.99"
+wasm-bindgen-futures = "0.4.49"
+wasm-logger = "0.2.0"
+web-sys = { version = "0.3", features = ["HtmlInputElement"] }
+yew = { version = "0.21.0", features = ["csr"]}

@@ -1,7 +1,7 @@
 [workspace]
 members = [
-    "saxaar-old", 
-    "saxaar"]
+    "saxaar-beta", 
+    "saxaar-new"]
 resolver = "2"
 
 [workspace.package]

@@ -1,0 +1,14 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+components = { path = "../components" }
+db = { path = "../db" }
+log.workspace = true
+models ={ path = "../models" }
+rusqlite.workspace = true
+wasm-bindgen-futures.workspace = true
+wasm-logger.workspace = true
+yew.workspace = true

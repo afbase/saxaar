@@ -1,0 +1,13 @@
+[package]
+name = "components"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+db = { path = "../db" }
+log.workspace = true
+models = { path = "../models" }
+serde.workspace = true
+web-sys.workspace = true
+yew.workspace = true
+wasm-bindgen-futures.workspace = true

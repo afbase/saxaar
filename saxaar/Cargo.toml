@@ -1,6 +1,0 @@
-[package]
-name = "saxaar"
-edition = "2024"
-version.workspace = true
-
-[dependencies]

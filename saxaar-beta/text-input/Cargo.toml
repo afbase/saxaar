@@ -1,0 +1,27 @@
+[package]
+name = "text-input"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "port_search"
+path = "src/lib.rs"
+
+[[bin]]
+name = "port-search"
+path = "src/main.rs"
+
+[dependencies]
+async-std = { workspace = true }
+csv = { workspace = true }
+futures = { workspace = true }
+getrandom = { workspace = true }
+log = { workspace = true }
+rusqlite = { workspace = true }
+serde = { workspace = true }
+strsim = { workspace = true }
+wasm-bindgen = { workspace = true }
+wasm-bindgen-futures = { workspace = true }
+wasm-logger = { workspace = true }
+web-sys = { workspace = true }
+yew = { workspace = true }
